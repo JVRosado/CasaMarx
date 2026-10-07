@@ -7,12 +7,14 @@ import siteConfiguration from './.figma/make/site.json'
 
 
 // Vite config — https://vitejs.dev/config/
-export default defineConfig(({ mode }) => {
+export default defineConfig(({ mode }) => 
+  {
   // .figma/make/deploy-preview passes `--mode development` for cached-preview builds.
   const emitSourcemaps = mode === 'development'
+  
 
   return {
-    base: process.env.FIGMA_PUBLIC_URL ? `${process.env.FIGMA_PUBLIC_URL}/` : '/',
+    base: process.env.FIGMA_PUBLIC_URL ? `${process.env.FIGMA_PUBLIC_URL}/` : '/CasaMarx/',
     build: {
       sourcemap: emitSourcemaps ? 'inline' : false,
       minify: !emitSourcemaps,
@@ -45,6 +47,7 @@ react(),
       port: parseInt(process.env.PORT || '8443'),
     },
   }
+  
 })
 
 type FigmaSiteConfiguration = {
