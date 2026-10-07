@@ -1,0 +1,10 @@
+{
+  "description": "Explore the life and ideas of Karl Marx through a visually striking platform that combines historical insights, interactive concepts, and modern design.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
