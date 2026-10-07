@@ -14,6 +14,7 @@ export default defineConfig(({ mode }) =>
   
 
   return {
+    //base: process.env.FIGMA_PUBLIC_URL ? `${process.env.FIGMA_PUBLIC_URL}/` : '/',
     base: process.env.FIGMA_PUBLIC_URL ? `${process.env.FIGMA_PUBLIC_URL}/` : '/CasaMarx/',
     build: {
       sourcemap: emitSourcemaps ? 'inline' : false,
