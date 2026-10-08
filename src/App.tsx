@@ -1,5 +1,5 @@
 import { useEffect, useState, type ReactNode } from "react";
-
+import logo from "./assets/LogoCasa.png";
 const workerImage =
   "https://images.unsplash.com/photo-1576666735179-f3ad352212c2?auto=format&fit=crop&w=1800&q=85";
 const factoryImage =
@@ -8,6 +8,8 @@ const marxImage =
   "https://upload.wikimedia.org/wikipedia/commons/d/d4/Karl_Marx_001.jpg";
 
 // Defina como `null` quando não houver destaque. Nesse caso, apenas a capa editorial será exibida.
+const showEventSlide = false;
+
 const activeFeature: {
   type: "event";
   eyebrow: string;
@@ -16,16 +18,18 @@ const activeFeature: {
   time: string;
   location: string;
   description: string;
-} | null = {
-  type: "event",
-  eyebrow: "Próximo encontro",
-  title: "Marx e o nosso tempo",
-  date: "28 JUN — 2025",
-  time: "19H30",
-  location: "Auditório principal",
-  description:
-    "Uma conversa aberta sobre trabalho, tecnologia e as novas formas de organização da vida contemporânea.",
-};
+} | null = showEventSlide
+  ? {
+      type: "event",
+      eyebrow: "Próximo encontro",
+      title: "Marx e o nosso tempo",
+      date: "28 JUN — 2025",
+      time: "19H30",
+      location: "Auditório principal",
+      description:
+        "Uma conversa aberta sobre trabalho, tecnologia e as novas formas de organização da vida contemporânea.",
+    }
+  : null;
 
 const concepts = [
   {
@@ -185,8 +189,10 @@ export default function App() {
     <main className="site-shell">
       <header className="topbar">
         <TextLink className="brand" href="#inicio">
-          CASA MARX
+          CASA MARX-ENGELS
+          {/*<img className="brand-logo" src={logo} alt="Casa Marx" />*/}
         </TextLink>
+
         <nav className="nav" aria-label="Navegação principal">
           <TextLink href="#pensamento">Pensamento</TextLink>
           <TextLink href="#obras">Obras</TextLink>
@@ -502,7 +508,7 @@ export default function App() {
       <footer className="footer">
         <div className="footer-top">
           <Heading className="footer-logo">CASA MARX</Heading>
-          <div className="footer-circle">CM</div>
+          <img className="footer-circle" src={logo} alt="Casa Marx" />
         </div>
         <div className="footer-bottom">
           <p>Pensar a sociedade é reconhecer que ela pode ser outra.</p>

@@ -77,9 +77,19 @@ img {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
   font-family: "Archivo Black", sans-serif;
   font-size: 0.95rem;
   letter-spacing: -0.03em;
+}
+
+.brand-logo {
+ width: rem;
+  height: 3rem;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  object-fit: contain;
 }
 
 .nav {
@@ -1119,6 +1129,7 @@ img {
   width: 6rem;
   height: 6rem;
   place-items: center;
+  object-fit: contain;
   color: var(--paper);
   border: 1px solid var(--paper);
   border-radius: 50%;
