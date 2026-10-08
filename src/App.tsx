@@ -512,8 +512,8 @@ export default function App() {
         </div>
         <div className="footer-bottom">
           <p>Pensar a sociedade é reconhecer que ela pode ser outra.</p>
-          <div>Projeto editorial conceitual · 2025</div>
-          <TextLink href="#inicio">Voltar ao início ↑</TextLink>
+          <div>Todos os direitos reservados · 2026</div>
+          <TextLink href="https://linkore.com.br/">Desenvolvido por Linkore</TextLink>
         </div>
       </footer>
     </main>
