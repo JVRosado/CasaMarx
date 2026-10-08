@@ -252,6 +252,7 @@ export default function App() {
                 <Heading as="h1" className="hero-title">
                   <span>CASA</span>
                   <span>MARX</span>
+                  <span>ENGELS</span>
                 </Heading>
                 <div className="hero-deck">
                   Ideias não habitam o vazio. Elas nascem do mundo — e voltam para transformá-lo.
