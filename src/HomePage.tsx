@@ -194,11 +194,11 @@ export default function App() {
         </TextLink>
 
         <nav className="nav" aria-label="Navegação principal">
+          <TextLink href={`${import.meta.env.BASE_URL}marx-engels`}>Marx &amp; Engels</TextLink>
           <TextLink href="#pensamento">Pensamento</TextLink>
           <TextLink href="#obras">Obras</TextLink>
           <TextLink href="#historia">História</TextLink>
           <TextLink href="#pensar">Para pensar</TextLink>
-          <TextLink href={`${import.meta.env.BASE_URL}marx-engels`}>Marx &amp; Engels</TextLink>
         </nav>
         <div className="issue">Caderno 01 — 2025</div>
       </header>
